@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <img src="images/logo.png" alt="Talent logo">
+
+    <h1>Salary Calculator</h1>
+
+    <form id="salary-form">
+
+        <label for="salary">Salary</label>
+        <input type="number" id="salary" name="salary">
+
+        <label for="state">State</label>
+        <select id="state" name="state">
+            <option value="Ohio">Ohio</option>
+            <option value="Florida">Florida</option>
+            <option value="California">California</option>
+        </select>
+
+        <label for="per">Per</label>
+        <select id="per" name="per">
+            <option value="annual">Annual</option>
+        </select>
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <p id="summary"></p>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
