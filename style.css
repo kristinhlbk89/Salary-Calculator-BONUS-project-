@@ -1,14 +1,91 @@
-
+```css id="j6x8k2"
 html {
-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card1,
+.card2,
+.card3,
+{
+    display: grid;
+    gap: 5px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input,
+select {
+    padding: 8px;
+    border: none;
+}
+
+button {
+    background-color: #E34B31;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    height: 36px;
 }
 
 #summary {
-  display: none;
+    display: none;
+    margin-top: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    font-weight: bold;
+}
+
+img {
+    width: 150px;
+    grid-column: 5;
+    grid-row: 1;
+}
+
+.card1, .card2, .card3, {
+    padding: 10px;
+}
+
+.card1 input, .card2 select, .card3 select {
+    width: 100%;
+}
+
+.card4 {
+    grid-column: 4;
+    grid-row: 1;
+    padding-top: 20px;
+}
+
+.card1 div {
+    display: grid;
+    grid-template-columns: auto 1fr;
 }
